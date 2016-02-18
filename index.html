@@ -8,22 +8,34 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
+    <style>
+        body{
+            background-color: #000000;
+        }
+        h1{
+            color: #00ff66;
+        }
+        .color{
+            text-shadow: 2px 2px #ff00ff;
+        }
+        .just-wanted{
+            text-shadow: 2px 2px #00ff00;
+        }
+    </style>
+
 </head>
 
 <body>
-
     <div class="container" style="text-align:center; padding:100px;">
         
         <div class="jumbotron">
             
             <h1>Just Sayin'</h1>
-            
+            <div class="just-wanted">
             <p style="margin-top:40px;">Just Wanted to tell you...<br>I AM THE QUEEN OF NORTHERN EUROPE!!!!!!!!!! THE AMAZING DENMARK!!!!!!!!</p>
         
-        </div>
-        
         <p>App By Ilana Rozzell</p>
-        
+         </div>
     </div>
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -36,23 +48,43 @@
 window.alert("I'M THE QUEEN OF NORTHERN EUROPE!!!!!")
 </script>
 
-<p>Click The Button Below</p>
+<div class="color">
+<center><p>Click The Button Below</p></center>
 
-<button onclick="myFunction()">CLICK MEH!!!</button>
+<center><button onclick="myFunction()">CLICK MEH!!!</button>
 
 <p id="demo"></p>
 
 <script>
 function myFunction() {
-    var person = prompt("I wanteed to tell you that you are awesome...but first i need your name", "Celaena Sardothien");
+    var person = prompt("I wanted to tell you that you are awesome...but first i need your name", "Celaena Sardothien");
     
     if (person != null) {
         document.getElementById("demo").innerHTML =
-        "Hello " + person + "! I just want to say...\"I'M AWESOME!!!! BWAHAHAHAHAHAHAHAHAHAH!!!!!!\"";
+        "Hello " + "Firstname" + "Lastname" + "! \"I just want to say...I'M AWESOME!!!! BWAHAHAHAHAHAHAHAHAHAH!!!!!!\"";
     }
 }
-</script>
+</script></center>
 
+<br>
+
+<center><p>Click 2nd button to add a comment</p></center>
+
+<center><button onclick="my2ndFunction()">click me please</button>
+
+<p id="demo"></p>
+
+<script>
+function my2ndFunction() {
+    var comment = prompt("add comments below", "put something here");
+    
+    if (comment != null) {
+        document.getElementById("demo").innerHTML =
+        "comment" + "! \"ThAnKs FoR tHe CoMmEnT!!!\"";
+    }
+}
+</script></center>
+</div>
 </body>
 
 </html>
