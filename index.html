@@ -9,16 +9,19 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
     <style>
-        body{
+        body {
             background-color: #000000;
         }
-        h1{
+        
+        h1 {
             color: #00ff66;
         }
-        .color{
+        
+        .color {
             text-shadow: 2px 2px #ff00ff;
         }
-        .just-wanted{
+        
+        .just-wanted {
             text-shadow: 2px 2px #00ff00;
         }
     </style>
@@ -27,64 +30,91 @@
 
 <body>
     <div class="container" style="text-align:center; padding:100px;">
-        
+
         <div class="jumbotron">
-            
+
             <h1>Just Sayin'</h1>
             <div class="just-wanted">
-            <p style="margin-top:40px;">Just Wanted to tell you...<br>I AM THE QUEEN OF NORTHERN EUROPE!!!!!!!!!! THE AMAZING DENMARK!!!!!!!!</p>
+                <p style="margin-top:40px;">Just Wanted to tell you...
+                    <br>I AM THE QUEEN OF NORTHERN EUROPE!!!!!!!!!! THE AMAZING DENMARK!!!!!!!!</p>
+
+                <p>App By Ilana Rozzell</p>
+            </div>
+        </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
         
-        <p>App By Ilana Rozzell</p>
-         </div>
-    </div>
-    
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script>
+            window.alert("I'M THE QUEEN OF NORTHERN EUROPE!!!!!")
+        </script>
 
-<script>
-window.alert("I'M THE QUEEN OF NORTHERN EUROPE!!!!!")
-</script>
+        <div class="color">
+            <center>
+                <p>Click The Button Below</p>
+            </center>
 
-<div class="color">
-<center><p>Click The Button Below</p></center>
+            <script type="text/javascript">
+                var clicks = 0;
 
-<center><button onclick="myFunction()">CLICK MEH!!!</button>
+                function onClick() {
+                    clicks += 1;
+                    document.getElementById("clicks").innerHTML = clicks;
+                };
+            </script>
+            <center>
+                <button onclick="myFunction()" onClick="onClick()">CLICK MEH!!!</button>
+                <p>Clicks: <a id="clicks">0</a></p>
 
-<p id="demo"></p>
+                <p id="demo"></p>
+                <script type="text/javascript">
+                 <!--
+                 var person = Firstname + Lastname;
+                //-->
+                </script>
+                <script>
+                    function myFunction() {
+                        var person = prompt("I wanted to tell you that you are awesome...but first i need your name", "Celaena Sardothien");
 
-<script>
-function myFunction() {
-    var person = prompt("I wanted to tell you that you are awesome...but first i need your name", "Celaena Sardothien");
-    
-    if (person != null) {
-        document.getElementById("demo").innerHTML =
-        "Hello " + "Firstname" + "Lastname" + "! \"I just want to say...I'M AWESOME!!!! BWAHAHAHAHAHAHAHAHAHAH!!!!!!\"";
-    }
-}
-</script></center>
+                        if (person != null) {
+                            document.getElementById("demo").innerHTML =
+                                "Hello " + Firstname + Lastname + "! \"I just want to say...I'M AWESOME!!!! BWAHAHAHAHAHAHAHAHAHAH!!!!!!\"";
+                        }
+                    }
+                </script>
+            </center>
 
-<br>
+            <br>
 
-<center><p>Click 2nd button to add a comment</p></center>
+            <center>
+                <p>Click 2nd button to add a comment</p>
+            </center>
 
-<center><button onclick="my2ndFunction()">click me please</button>
+            <center>
+                <button onclick="my2ndFunction()">click me please</button>
 
-<p id="demo"></p>
+                <p id="demo"></p>
 
-<script>
-function my2ndFunction() {
-    var comment = prompt("add comments below", "put something here");
-    
-    if (comment != null) {
-        document.getElementById("demo").innerHTML =
-        "comment" + "! \"ThAnKs FoR tHe CoMmEnT!!!\"";
-    }
-}
-</script></center>
-</div>
+                <script>
+                    function my2ndFunction() {
+                        var comment = prompt("add comments below", "put something here");
+
+                        if (comment != null) {
+                            document.getElementById("demo").innerHTML =
+                                "comment" + "! \"ThAnKs FoR tHe CoMmEnT!!!\"";
+                        }
+                    }
+                </script>
+            </center>
+            <link rel="stylesheet" href="animate.css">
+            <script src="wow.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+        </div>
 </body>
 
 </html>
