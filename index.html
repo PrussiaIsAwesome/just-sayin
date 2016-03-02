@@ -7,8 +7,9 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
+ <link rel="stylesheet" href="animate.css">
     <style>
+   
         body {
             background-color: #000000;
         }
@@ -25,6 +26,7 @@
             text-shadow: 2px 2px #00ff00;
         }
     </style>
+   
 
 </head>
 
@@ -53,10 +55,11 @@
         </script>
 
         <div class="color">
+            <div class="wow rotateInDownRight">
             <center>
                 <p>Click The Button Below</p>
             </center>
-
+    </div>
             <script type="text/javascript">
                 var clicks = 0;
 
@@ -66,36 +69,36 @@
                 };
             </script>
             <center>
+                <div class="wow lightSpeedIn">
                 <button onclick="myFunction()" onClick="onClick()">CLICK MEH!!!</button>
                 <p>Clicks: <a id="clicks">0</a></p>
-
+               </div>
                 <p id="demo"></p>
-                <script type="text/javascript">
-                 <!--
-                 var person = Firstname + Lastname;
-                //-->
-                </script>
+
                 <script>
                     function myFunction() {
                         var person = prompt("I wanted to tell you that you are awesome...but first i need your name", "Celaena Sardothien");
-
+                    
                         if (person != null) {
                             document.getElementById("demo").innerHTML =
-                                "Hello " + Firstname + Lastname + "! \"I just want to say...I'M AWESOME!!!! BWAHAHAHAHAHAHAHAHAHAH!!!!!!\"";
-                        }
+                                "Hello " + person + "! \"I just want to say...I'M AWESOME!!!! BWAHAHAHAHAHAHAHAHAHAH!!!!!!\"";
+                        onClick()
+                                                 }
                     }
+                
                 </script>
             </center>
 
             <br>
-
+                <div class="wow rotateInDownLeft">
             <center>
                 <p>Click 2nd button to add a comment</p>
             </center>
-
+</div>
             <center>
+                <div class="wow lightSpeedIn">
                 <button onclick="my2ndFunction()">click me please</button>
-
+                </div>
                 <p id="demo"></p>
 
                 <script>
@@ -105,16 +108,20 @@
                         if (comment != null) {
                             document.getElementById("demo").innerHTML =
                                 "comment" + "! \"ThAnKs FoR tHe CoMmEnT!!!\"";
-                        }
+                        onClick()    
+                                                    }
                     }
                 </script>
             </center>
-            <link rel="stylesheet" href="animate.css">
-            <script src="wow.js"></script>
-              <script>
-              new WOW().init();
-              </script>
+            
+            
         </div>
+ <script src="wow.js"></script>
+              <script>
+               $(function(){
+                new WOW().init();
+            });
+              </script>
 </body>
 
 </html>
