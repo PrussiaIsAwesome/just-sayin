@@ -7,9 +7,8 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
- <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="animate.css">
     <style>
-   
         body {
             background-color: #000000;
         }
@@ -25,22 +24,51 @@
         .just-wanted {
             text-shadow: 2px 2px #00ff00;
         }
+        button {
+           padding: 14px 24px;
+           font-size: 18px;
+           text-align: center;
+           cursor: pointer;
+           outline: none;
+           color: #fff;
+           background-color: #00ff00 ;
+           border: none;
+           border-radius: 15px;
+           box-shadow: 0 9px #0000cc;
+       }
+       
+       button:hover {
+           background-color: #00ffff 
+       }
+       
+       button:active {
+           background-color: #e600a8 ;
+           box-shadow: 0 2px #000000;
+           transform: translateY(4px);
+       }
+
     </style>
-   
+
 
 </head>
 
 <body>
     <div class="container" style="text-align:center; padding:100px;">
 
+
         <div class="jumbotron">
 
             <h1>Just Sayin'</h1>
+          
+
             <div class="just-wanted">
                 <p style="margin-top:40px;">Just Wanted to tell you...
-                    <br>I AM THE QUEEN OF NORTHERN EUROPE!!!!!!!!!! THE AMAZING DENMARK!!!!!!!!</p>
-
-                <p>App By Ilana Rozzell</p>
+                    <br>I AM THE QUEEN OF NORTHERN EUROPE!!!!!!!!!! THE AMAZING DENMARK!!!!!!!! but first i need your name</p>
+  
+                <div id="countAlert" style="display:none;">
+                    you have been told <span id="number">XX</span>times
+                
+               
             </div>
         </div>
 
@@ -50,78 +78,72 @@
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
         
-        <script>
-            window.alert("I'M THE QUEEN OF NORTHERN EUROPE!!!!!")
-        </script>
+        <!-- for the hide and show toggle button -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+ <input type="text" id="name"/></div>
+
 
         <div class="color">
             <div class="wow rotateInDownRight">
-            <center>
-                <p>Click The Button Below</p>
-            </center>
-    </div>
-            <script type="text/javascript">
-                var clicks = 0;
+                <center>
+                    <p>Click The Button Below</p>
+                </center>
+            </div>
 
-                function onClick() {
-                    clicks += 1;
-                    document.getElementById("clicks").innerHTML = clicks;
-                };
-            </script>
+
+
+
+
+
             <center>
                 <div class="wow lightSpeedIn">
-                <button onclick="myFunction()" onClick="onClick()">CLICK MEH!!!</button>
-                <p>Clicks: <a id="clicks">0</a></p>
-               </div>
-                <p id="demo"></p>
-
-                <script>
-                    function myFunction() {
-                        var person = prompt("I wanted to tell you that you are awesome...but first i need your name", "Celaena Sardothien");
-                    
-                        if (person != null) {
-                            document.getElementById("demo").innerHTML =
-                                "Hello " + person + "! \"I just want to say...I'M AWESOME!!!! BWAHAHAHAHAHAHAHAHAHAH!!!!!!\"";
-                        onClick()
-                                                 }
-                    }
-                
-                </script>
-            </center>
-
-            <br>
-                <div class="wow rotateInDownLeft">
-            <center>
-                <p>Click 2nd button to add a comment</p>
-            </center>
-</div>
-            <center>
-                <div class="wow lightSpeedIn">
-                <button onclick="my2ndFunction()">click me please</button>
+                    <button onclick="myFunction()" onClick="onClick()">CLICK MEH!!!</button>
+                    <p>Clicks: <a id="clicks">0</a></p>
                 </div>
                 <p id="demo"></p>
+                </center>
 
-                <script>
-                    function my2ndFunction() {
-                        var comment = prompt("add comments below", "put something here");
 
-                        if (comment != null) {
-                            document.getElementById("demo").innerHTML =
-                                "comment" + "! \"ThAnKs FoR tHe CoMmEnT!!!\"";
-                        onClick()    
-                                                    }
-                    }
-                </script>
+
+
+           
+            <br>
+            <div class="wow rotateInDownLeft">
+                <center>
+                    <p>Click 2nd button to add a comment</p>
+                </center>
+            </div>
+        
+            
+            
+            <center>
+                <div class="wow lightSpeedIn">
+                    <button onclick="my2ndFunction()">click me please</button>
+                </div>
+                <p id="demo"></p>
+                <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>
+                
+                
+                
+                
+<button>hide or show</button>
+<div class="something">
+<p>This is a paragraph with little content.</p>
+<img src="http://www.welikeviral.com/files/2015/03/Memes-10.jpg">
+</div>
+
+
             </center>
-            
-            
+            <p>App By Ilana Rozzell</p>
+
+
         </div>
- <script src="wow.js"></script>
-              <script>
-               $(function(){
-                new WOW().init();
-            });
-              </script>
+        <script src="wow.js"></script>
+        <script src="app.js"></script>
+
+
+
 </body>
 
 </html>
