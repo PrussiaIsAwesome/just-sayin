@@ -1,5 +1,3 @@
-  window.alert("I'M THE QUEEN OF NORTHERN EUROPE!!!!!");
-  
   var clicks = 0;
 
   function onClick() {
@@ -8,11 +6,10 @@
   };
 
   function myFunction() {
-    var person = prompt("I wanted to tell you that you are awesome...but first i need your name", "Celaena Sardothien");
-
-    if (person != null) {
+var name = $("#name").val();
+    if (name != null) {
       document.getElementById("demo").innerHTML =
-        "Hello " + person + "! \"I just want to say...I'M AWESOME!!!! BWAHAHAHAHAHAHAHAHAHAH!!!!!!\"";
+        "\"Hello " + name + "! I just want to say...I'M AWESOME!!!! BWAHAHAHAHAHAHAHAHAHAH!!!!!!\"";
       onClick()
     }
   }
@@ -48,5 +45,17 @@
  $(document).ready(function(){
     $("button").click(function(){ 
         $(".something").toggle();
+    });
+});
+
+ $(document).ready(function(){
+    $("button").click(function(){ 
+        $(".button 1").toggle();
+    });
+});
+
+ $(document).ready(function(){
+    $("button").click(function(){ 
+        $(".button 2").toggle();
     });
 });
