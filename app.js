@@ -3,59 +3,45 @@
   function onClick() {
     clicks += 1;
     document.getElementById("clicks").innerHTML = clicks;
-  };
+  }
 
   function myFunction() {
-var name = $("#name").val();
+    var name = $("#name").val();
     if (name != null) {
       document.getElementById("demo").innerHTML =
         "\"Hello " + name + "! I just want to say...I'M AWESOME!!!! BWAHAHAHAHAHAHAHAHAHAH!!!!!!\"";
-      onClick()
+      onClick();
     }
   }
 
   function my2ndFunction() {
-    var comment = prompt("add comments below", "put something here");
-
+    var comment = $("#comment").val();
     if (comment != null) {
-      $("#demo").text("! \"ThAnKs FoR tHe CoMmEnT!!!\"");
-      onClick()
+      document.getElementById("demo").innerHTML =
+        comment + "ThAnKs FoR tHe CoMmEnT!!!;"
+      onClick();
     }
   }
 
   $(function() {
     new WOW().init();
   });
-  
+
   var count = 0;
-  
-  function mainAlert()
-  {
+
+  function mainAlert() {
     var name = $('#name').val();
-    
-    alert(name+", I'M THE QUEEN!");
-    
-    count++
-    
+
+    alert(name + ", I'M THE QUEEN!");
+
+    count++;
+
     $('countAlert').show();
-    
+
     $('#countAlert #number').text(count);
   }
+
+  $(".hide-or-show").click(function() {
+    $(".something").toggle();
+  });
   
- $(document).ready(function(){
-    $("button").click(function(){ 
-        $(".something").toggle();
-    });
-});
-
- $(document).ready(function(){
-    $("button").click(function(){ 
-        $(".button 1").toggle();
-    });
-});
-
- $(document).ready(function(){
-    $("button").click(function(){ 
-        $(".button 2").toggle();
-    });
-});
