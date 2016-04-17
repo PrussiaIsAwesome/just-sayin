@@ -47,7 +47,7 @@
     $(".forwards").hide();
     $(".game-end").hide();
     $(".end").hide();
-    $(".two").hide();
+    $(".end-two").hide();
 
 
     function my4thFunction() {
@@ -78,9 +78,15 @@
     }
     
     function my8thFunction() {
-      $(".end").show();
+      $(".end2").show();
       $(".forwards").hide();
     }
+    
+     function my9thFunction() {
+      $(".end-two").show();
+      $(".game-end").hide();
+    }
+    
     
     
     
