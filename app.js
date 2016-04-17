@@ -47,6 +47,8 @@
     $(".forwards").hide();
     $(".game-end").hide();
     $(".end").hide();
+    $(".two").hide();
+
 
     function my4thFunction() {
       $(".game-intro").show();
@@ -77,19 +79,10 @@
     
     function my8thFunction() {
       $(".end").show();
-      $(".game-end").hide();
+      $(".forwards").hide();
     }
     
-      
     
     
-  
-  
-  
-  
-  
-  
-  
-  
+    
   }
-  
