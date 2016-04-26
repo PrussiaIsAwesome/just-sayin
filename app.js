@@ -78,7 +78,7 @@
     }
     
     function my8thFunction() {
-      $(".end2").show();
+      $(".end").show();
       $(".forwards").hide();
     }
     
@@ -86,7 +86,9 @@
       $(".end-two").show();
       $(".game-end").hide();
     }
-    
+        // Captcha Game
+  
+
     
     
     

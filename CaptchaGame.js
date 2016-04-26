@@ -1,0 +1,1 @@
+var text = ["aWWWeSS000meNEEsss","1@3AbC4%6DeF","B)XDXP"];
