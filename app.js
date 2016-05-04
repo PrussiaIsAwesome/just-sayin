@@ -87,10 +87,4 @@
       $(".game-end").hide();
     }
         // Captcha Game
-  
-
-    
-    
-    
-    
-  }
+        }
