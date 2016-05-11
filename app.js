@@ -9,8 +9,7 @@
     function myFunction() {
       var name = $("#name").val();
       if (name != null) {
-        document.getElementById("demo").innerHTML =
-          "\"Hello " + name + "! I just want to say...I'M AWESOME!!!! BWAHAHAHAHAHAHAHAHAHAH!!!!!!\"";
+        $("#demo").text("\"Hello " + name + "! I just want to say...I'M AWESOME!!!! BWAHAHAHAHAHAHAHAHAHAH!!!!!!\"");
 
       }
     }
@@ -18,7 +17,7 @@
     function my2ndFunction() {
       var comment = $("#comment").val();
       if (comment != null) {
-        document.getElementById("demo").innerHTML = comment + "ThAnKs FoR tHe CoMmEnT!!!";
+       $("comment").text("comment" + "ThAnKs FoR tHe CoMmEnT!!!");
 
       }
     }
@@ -60,6 +59,7 @@
     function my3ndFunction() {
       $(".game-intro").hide();
       $(".game").show();
+      captchaGame();
     }
     
     function my5thFunction() {
