@@ -8,7 +8,7 @@
 
 
             //create an array to hold the texts list
-            var text = ["aWWWeSS000meNEEsss", "1@3AbC4%6DeF", "B)XDXPXOX3"];
+            var text = ["aWWWeSS000meNEEsSs1!2", "1@3AbC4%6DeF", "B)XDXPXOX3"];
 
             //get a random number
             var randomNumber = Math.floor(Math.random() * (text.length));
@@ -35,7 +35,7 @@
                 
                 //alert another message if incorrect
                 else {
-                    $('#randomtext').text("You failed!");
+                    $("#randomText").text("You failed!");
                 }
             }, 10000);
 
@@ -45,6 +45,3 @@
 
 
         }
-
-        $("randomText").text("")
-            //  for (var i = 0; i <= texts.length; i++){}

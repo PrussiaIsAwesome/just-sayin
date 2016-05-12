@@ -1,4 +1,4 @@
-  {
+  {/*global $*/
     var clicks = 0;
 
     function onClick() {
@@ -15,9 +15,9 @@
     }
 
     function my2ndFunction() {
-      var comment = $("#comment").val();
+      var comment = $("#commentField").val();
       if (comment != null) {
-       $("comment").text("comment" + "ThAnKs FoR tHe CoMmEnT!!!");
+        $("#commentDisplay").text(comment + "ThAnKs FoR tHe CoMmEnT!!!");
 
       }
     }
@@ -59,32 +59,33 @@
     function my3ndFunction() {
       $(".game-intro").hide();
       $(".game").show();
+      //start's captcha game after doom slide
       captchaGame();
     }
-    
+
     function my5thFunction() {
       $(".game-forward").show();
       $(".game").hide();
     }
-  
-     function my6thFunction() {
+
+    function my6thFunction() {
       $(".forwards").show();
       $(".game-forward").hide();
     }
-    
-     function my7thFunction() {
+
+    function my7thFunction() {
       $(".game-end").show();
       $(".forwards").hide();
     }
-    
+
     function my8thFunction() {
       $(".end").show();
       $(".forwards").hide();
     }
-    
-     function my9thFunction() {
+
+    function my9thFunction() {
       $(".end-two").show();
       $(".game-end").hide();
     }
-        // Captcha Game
-        }
+    // Captcha Game
+  }
