@@ -1,3 +1,4 @@
+       /*global $*/
         // function holding game
         function captchaGame() {
             // creates an array of possible texts
@@ -35,9 +36,9 @@
                 
                 //alert another message if incorrect
                 else {
-                    $("#randomText").text("You failed!");
+                    $("#randomText").text("You failed! Now click next");
                 }
-            }, 10000);
+            }, 7000);
 
 
 
